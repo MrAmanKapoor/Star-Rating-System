@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a3a4c7c0c6.js"></script>
+
+</head>
+
+<body>
+
+    <select id="selectInput" class='form-control'>
+        <option value="" disabled selected>Select Food</option>
+    <option value="Pizza">Pizza</option>
+    <option value="Samosa">Samosa</option>
+    <option value="Pani_Puri">Pani_Puri</option>
+    <option value="Pasta">Pasta</option>
+</select>
+
+    <input type="number" id='ratingInput' class='form-control' step="0.1" max='5' min='0' disabled>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Food Names</td>
+                <td>Ratings</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class='Pizza'>
+                <td>Pizza</td>
+                <td>
+                    <div class="outer-star">
+                        <div class="inner-star">
+
+                        </div>
+                    </div>
+                    <span class="numberRating">-</span>
+                </td>
+            </tr>
+            <tr class='Samosa'>
+                <td>Samosa</td>
+                <td>
+                    <div class="outer-star">
+                        <div class="inner-star">
+
+                        </div>
+                    </div>
+                    <span class="numberRating">-</span>
+                </td>
+            </tr>
+
+
+            <tr class='Pani_Puri'>
+                <td>Pani_Puri</td>
+                <td>
+                    <div class="outer-star">
+                        <div class="inner-star">
+
+                        </div>
+                    </div>
+                    <span class="numberRating">-</span>
+                </td>
+            </tr>
+
+
+            <tr class='Pasta'>
+                <td>Pasta</td>
+                <td>
+                    <div class="outer-star">
+                        <div class="inner-star">
+
+                        </div>
+                    </div>
+                    <span class="numberRating">-</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script Src='script.js'></script>
+</body>
+
+</html>
