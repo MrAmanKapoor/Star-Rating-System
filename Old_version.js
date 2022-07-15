@@ -30,6 +30,41 @@ ratingInput.addEventListener('change', function(e) {
 
 
 
+function rateIt() {
+
+    for (rating in ratings) {
+        ratingPercentage = ratings[rating]*100 / totalRating;
+        console.log("Rating$"+ ratingPercentage);
+        star = table.querySelector(`.${rating} .inner-star`);
+        numberRating = table.querySelector(`.${rating} .numberRating`);
+        ratingRounded=  ratings[rating]*100 / totalRating + "%";
+        star.style.width = ratingRounded;
+        numberRating.innerText = ratings[rating];
+
+    }
+}
+
+rateIt()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
